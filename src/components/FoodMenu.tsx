@@ -60,7 +60,7 @@ export function FoodMenu() {
     <div className="w-full max-w-md mx-auto my-8 relative">
       <h2 className="text-xl font-bold mb-10 text-center tracking-tight">Our Premium Menu</h2>
 
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" ref={emblaRef}>
         <div className="flex touch-pan-y items-end pb-8">
           {menuItems.map((item, index) => {
             const isActive = selectedIndex === index;

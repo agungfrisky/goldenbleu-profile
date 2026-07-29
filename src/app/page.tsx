@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Utensils, MapPin } from "lucide-react";
+import { MessageCircle, Utensils, MapPin, Star } from "lucide-react";
 import { FoodMenu } from "@/components/FoodMenu";
 import { Location } from "@/components/Location";
+import { Reviews } from "@/components/Reviews";
 
 const socialLinks = [
   {
@@ -12,6 +13,12 @@ const socialLinks = [
     icon: <Utensils className="w-6 h-6" />,
     color: "group-hover:text-primary",
   },
+  // {
+  //   name: "Review Pelanggan",
+  //   url: "#reviews",
+  //   icon: <Star className="w-6 h-6" />,
+  //   color: "group-hover:text-yellow-500",
+  // },
   {
     name: "Lokasi Kami",
     url: "#location",
@@ -63,9 +70,7 @@ export default function Home() {
 
         {/* Brand Name & Slogan */}
         <h1 className="text-4xl font-extrabold mb-2 tracking-tight text-center">Golden Bleu</h1>
-        <p className="text-foreground/70 text-center mb-10 font-medium text-lg">
-          &quot;Kelezatan Premium Di Setiap Gigitan&quot;
-        </p>
+        <p className="text-foreground/70 text-center mb-10 font-medium text-lg">&quot;Kelezatan Premium Di Setiap Gigitan&quot;</p>
 
         {/* Links Section */}
         <div className="w-full flex flex-col gap-4 mb-12">
@@ -91,6 +96,13 @@ export default function Home() {
         <div id="menu" className="w-full scroll-mt-24">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }}>
             <FoodMenu />
+          </motion.div>
+        </div>
+
+        {/* Reviews Section */}
+        <div id="reviews" className="w-full scroll-mt-24 overflow-hidden">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.55 }}>
+            <Reviews />
           </motion.div>
         </div>
 
