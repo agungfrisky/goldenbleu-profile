@@ -13,9 +13,13 @@ export function Location() {
           <MapPin className="w-8 h-8" />
         </div>
 
-        <h3 className="text-xl font-bold mb-1">Golden Bleu</h3>
-
+        <h3 className="text-xl font-bold mb-3">Golden Bleu</h3>
+        
+        {/* Garis Pembatas */}
+        <div className="w-16 h-1 bg-primary rounded-full mb-4 opacity-80" />
+        
         {/* Alamat Lengkap */}
+        <h3 className="text-m font-medium">Benteng Vastenburg</h3>
         <p className="text-sm font-medium text-foreground mb-3 px-4">Jl. Jend. Sudirman, Kedung Lumbu, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
 
         <p className="text-sm text-foreground/70 mb-6">Kunjungi kami secara langsung dan rasakan pengalaman kelezatan premium di tempat.</p>

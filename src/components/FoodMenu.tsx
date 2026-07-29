@@ -38,8 +38,6 @@ const menuItems = [
 
 export function FoodMenu() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-  const [canScrollNext, setCanScrollNext] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
@@ -48,12 +46,11 @@ export function FoodMenu() {
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());
-    setCanScrollPrev(emblaApi.canScrollPrev());
-    setCanScrollNext(emblaApi.canScrollNext());
   }, [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     onSelect();
     emblaApi.on("select", onSelect);
     emblaApi.on("reInit", onSelect);
