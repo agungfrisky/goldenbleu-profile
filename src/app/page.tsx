@@ -5,6 +5,7 @@ import { MessageCircle, Utensils, MapPin, Star } from "lucide-react";
 import { FoodMenu } from "@/components/FoodMenu";
 import { Location } from "@/components/Location";
 import { Reviews } from "@/components/Reviews";
+import { FloatingAction } from "@/components/FloatingAction";
 
 const socialLinks = [
   {
@@ -113,6 +114,9 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* Floating Action Button */}
+      <FloatingAction />
     </main>
   );
 }

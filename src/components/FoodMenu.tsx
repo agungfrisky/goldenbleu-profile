@@ -72,7 +72,7 @@ export function FoodMenu() {
                   <div className="absolute top-0 left-0 right-0 h-28 bg-primary/20 dark:bg-primary/10 rounded-t-[2rem] rounded-b-[50%] -z-10" />
 
                   {/* Food Image Container (Transparent) */}
-                  <div className="relative z-10 w-44 h-44 -mt-20 mb-2 drop-shadow-2xl shrink-0">
+                  <div className="relative z-10 w-54 h-50 -mt-20 -mb-2 drop-shadow-2xl shrink-0">
                     <motion.img
                       src={item.image}
                       alt={item.name}
@@ -81,10 +81,10 @@ export function FoodMenu() {
                         rotate: isActive ? 3 : 0,
                         opacity: isActive ? 1 : 0.8,
                       }}
-                      transition={{ 
-                        duration: 0.4, 
+                      transition={{
+                        duration: 0.4,
                         ease: "easeOut",
-                        delay: isActive ? 0.25 : 0 
+                        delay: isActive ? 0.25 : 0,
                       }}
                       className="w-full h-full object-contain drop-shadow-xl"
                     />
