@@ -28,7 +28,7 @@ export function FloatingAction() {
     <AnimatePresence>
       {isVisible && (
         <motion.a
-          href="https://wa.me/6281234567890"
+          href="https://wa.me/6282324961064"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 40, scale: 0.8 }}
