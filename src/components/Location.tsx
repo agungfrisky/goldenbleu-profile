@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Navigation } from "lucide-react";
+import { MapPin, Navigation, Clock, CalendarDays } from "lucide-react";
 
 export function Location() {
   return (
@@ -14,13 +14,32 @@ export function Location() {
         </div>
 
         <h3 className="text-xl font-bold mb-3">Golden Bleu</h3>
-        
+
         {/* Garis Pembatas */}
         <div className="w-16 h-1 bg-primary rounded-full mb-4 opacity-80" />
-        
+
         {/* Alamat Lengkap */}
         <h3 className="text-m font-medium">Benteng Vastenburg</h3>
-        <p className="text-sm font-medium text-foreground mb-3 px-4">Jl. Jend. Sudirman, Kedung Lumbu, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
+        <p className="text-sm font-medium text-foreground mb-4 px-4">Jl. Jend. Sudirman, Kedung Lumbu, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
+
+        {/* Jam Operasional */}
+        <div className="w-full bg-black/5 dark:bg-white/5 rounded-2xl p-4 mb-6 flex flex-col gap-3 text-left">
+          <div className="flex items-start gap-3">
+            <Clock className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+            <div>
+              <p className="font-semibold text-sm">Selasa - Minggu (Benteng Vastenburg)</p>
+              <p className="text-sm text-foreground/70">18.00 - 23.00 WIB</p>
+            </div>
+          </div>
+          <div className="w-full h-px bg-foreground/10" />
+          <div className="flex items-start gap-3">
+            <CalendarDays className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+            <div>
+              <p className="font-semibold text-sm">Spesial Minggu Pagi (CFD - Perempatan Nonongan)</p>
+              <p className="text-sm text-foreground/70">06.30 - 09.00 WIB</p>
+            </div>
+          </div>
+        </div>
 
         <p className="text-sm text-foreground/70 mb-6">Kunjungi kami secara langsung dan rasakan pengalaman kelezatan premium di tempat.</p>
 

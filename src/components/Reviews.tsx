@@ -79,6 +79,19 @@ export function Reviews() {
           ))}
         </div>
       </div>
+      
+      {/* Review CTA Button */}
+      <div className="mt-8 flex justify-center relative z-20">
+        <a 
+          href="https://maps.app.goo.gl/1FNgQi5nJ75jZSxFA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-primary text-white hover:bg-primary-hover py-3 px-8 rounded-full font-bold transition-all shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1"
+        >
+          <Star className="w-5 h-5 fill-current" />
+          Berikan Ulasan Anda di Google Maps
+        </a>
+      </div>
     </div>
   );
 }

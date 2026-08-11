@@ -64,7 +64,7 @@ export default function Home() {
         <motion.div whileHover={{ scale: 1.05 }} className="w-32 h-32 rounded-full bg-gradient-to-tr from-primary to-amber-300 p-1 mb-6 shadow-2xl shadow-primary/30 relative">
           <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden relative">
             {/* Note: User will provide logo here later */}
-            <Utensils className="w-12 h-12 text-primary absolute" />
+            <img src="/logo.png" alt="Logo Golden Bleu" className="w-full h-full object-cover z-20" />
             <div className="w-full h-full bg-black/5 flex items-center justify-center backdrop-blur-sm z-10" />
           </div>
         </motion.div>

@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 
 const menuItems = [
@@ -163,6 +163,19 @@ export function FoodMenu() {
       >
         <ChevronRight className="w-5 h-5" />
       </button>
+
+      {/* Full Menu Button */}
+      <div className="mt-8 flex justify-center">
+        <a 
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 py-3 px-6 rounded-full font-semibold transition-colors shadow-sm"
+        >
+          <FileText className="w-5 h-5" />
+          Lihat Menu Lengkap (PDF)
+        </a>
+      </div>
     </div>
   );
 }

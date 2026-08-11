@@ -40,7 +40,7 @@ export function FloatingAction() {
           className="fixed bottom-6 right-6 sm:bottom-10 sm:right-10 z-50 flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-primary text-white shadow-2xl shadow-primary/40 font-bold hover:bg-primary-hover transition-colors"
         >
           <MessageCircle className="w-5 h-5 fill-current" />
-          <span>Order via WhatsApp</span>
+          <span>Chat via WhatsApp</span>
         </motion.a>
       )}
     </AnimatePresence>
