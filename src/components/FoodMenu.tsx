@@ -9,21 +9,21 @@ const menuItems = [
   {
     id: 1,
     name: "Classic",
-    price: "Rp 17.000",
+    price: "Rp 20.000",
     image: "/menu/classic.png",
     description: "Ayam renyah isi keju lumer dengan kentang goreng hangat & saus BBQ/Spicy. Klasik & selalu memuaskan!",
   },
   {
     id: 2,
     name: "Deluxe",
-    price: "Rp 22.000",
+    price: "Rp 25.000",
     image: "/menu/deluxe.png",
     description: "Cordon Bleu dengan porsi kentang melimpah & siraman saus Mushroom atau Cream Cheese yang gurih creamy.",
   },
   {
     id: 3,
     name: "Combo",
-    price: "Rp 22.000",
+    price: "Rp 25.000",
     image: "/menu/combo.png",
     description: "Paket puas Cordon Bleu renyah, kentang goreng hangat, dan 2 Cheese Ball lumer lengkap dengan saus.",
   },
@@ -37,14 +37,14 @@ const menuItems = [
   {
     id: 5,
     name: "Fries & Chicken",
-    price: "Rp 27.000",
+    price: "Rp 30.000",
     image: "/menu/fnc.png",
     description: "Kombinasi seru ayam goreng krispi dan kentang goreng gurih dengan siraman 3 varian saus pilihan.",
   },
   {
     id: 6,
     name: "Mac & Chicken",
-    price: "Rp 30.000",
+    price: "Rp 35.000",
     image: "/menu/mnc.png",
     description: "Makaroni saus keju creamy dipadukan dengan ayam krispi renyah dan siraman 3 varian saus gurih.",
   },
@@ -58,7 +58,7 @@ const menuItems = [
   {
     id: 8,
     name: "Mix Plater",
-    price: "Rp 20.000",
+    price: "Rp 25.000",
     image: "/menu/mp.png",
     description: "Paket sharing komplit! 2 Cheese Ball lumer, sosis gurih, dan kentang goreng renyah plus saus pilihan.",
   },
@@ -166,7 +166,7 @@ export function FoodMenu() {
 
       {/* Full Menu Button */}
       <div className="mt-8 flex justify-center">
-        <a 
+        <a
           href="#"
           target="_blank"
           rel="noopener noreferrer"
