@@ -174,7 +174,7 @@ export function FoodMenu() {
       {/* Full Menu Button */}
       <div className="mt-8 flex justify-center">
         <a
-          href="#"
+          href="https://drive.google.com/file/d/1wslxPRAoB9LZeJ2e17qrbZq6BifcsUQ4/view?usp=drivesdk"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 py-3 px-6 rounded-full font-semibold transition-colors shadow-sm"
